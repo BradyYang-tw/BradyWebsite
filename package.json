@@ -1,0 +1,36 @@
+{
+  "name": "bradywebsite",
+  "version": "1.0.0",
+  "description": "Brady personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradyYang-tw/BradyWebsite.git"
+  },
+  "author": "Brady",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BradyYang-tw/BradyWebsite/issues"
+  },
+  "homepage": "https://github.com/BradyYang-tw/BradyWebsite#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "awesome-typescript-loader": "^5.2.1",
+    "html-webpack-plugin": "^5.5.0",
+    "source-map-loader": "^4.0.1",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  }
+}
