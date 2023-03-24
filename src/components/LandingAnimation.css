@@ -1,0 +1,87 @@
+.landBackground {
+  background-color: rgb(56, 56, 56);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.hint {
+  color: white;
+  font-size: 2rem;
+  padding-top: 200px;
+  animation-name: twinkle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.static-text {
+  color: white;
+  /* 文字讓他不要換行 */
+  white-space: nowrap;
+}
+
+.dynamic-text {
+  position: relative;
+  height: 50px;
+  margin-left: 10px;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #edde5d;
+}
+.dynamic-text:before {
+  content: "";
+  position: absolute;
+  border-left: solid 1px #edde5d; /* border-left 用來做會閃爍的打字線 */
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgb(56, 56, 56);
+  animation: typewriter 4s steps(23) infinite, blink 0.5s steps(23) infinite;
+}
+
+/* 處理-3：換字效果 */
+.dynamic-text-wrapper {
+  position: relative;
+  top: 0px;
+  animation: moveup 12s steps(3) infinite;
+  /* //每一行打字設定是4s所以3s需要花費 4*3 =12秒時間移到最後一行
+        //因為3行所以這個動畫花steps(3)次解決～ */
+}
+
+@keyframes twinkle {
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes typewriter {
+  40%,
+  60% {
+    left: 100%;
+  }
+  /* //40%~60% 讓字固定在最長的長度 */
+  100% {
+    left: 0;
+  }
+  /* //100% 再讓所有字消失，好像有人在把字刪掉的感覺～ */
+}
+
+@keyframes blink {
+  from {
+    border-left: solid 1px #edde5d;
+  }
+  to {
+    border-left: solid 1px transparent;
+  }
+}
+
+@keyframes moveup {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -150px;
+  }
+  /* //每行高度是50px，要讓最後一行出現就是50px*3行=150px囉～ */
+}

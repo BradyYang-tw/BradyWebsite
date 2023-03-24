@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-// import {Hello} from "./components/Hello";
+import Home from "./components/Home";
+import './index.css'
 
 const APP = () => (
-  <div>Hello World</div>
+  <Home></Home>
 );
 
 render(<APP/>, document.getElementById('root'));
