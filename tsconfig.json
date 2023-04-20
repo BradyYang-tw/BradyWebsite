@@ -6,7 +6,10 @@
         "module": "es6",
         "target": "es5",
         "jsx": "react",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        // 加入以下兩行，避免TS2300: Duplicate identifier
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true
     },
     "include": [
         "./src/**/*"
