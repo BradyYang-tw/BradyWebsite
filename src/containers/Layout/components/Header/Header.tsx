@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Style from "./styles";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <Style.HeaderDiv>
@@ -7,19 +8,19 @@ const Header = () => {
       <Style.HeaderNavGroup>
         <Style.HeaderNav>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink href="#">Home</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="/home">Home</Style.HeaderNavLink>
           </Style.HeaderNavList>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink href="#">About</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="#">About</Style.HeaderNavLink>
           </Style.HeaderNavList>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink href="#">Projects</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="#">Projects</Style.HeaderNavLink>
           </Style.HeaderNavList>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink href="#">Articles</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="#">Articles</Style.HeaderNavLink>
           </Style.HeaderNavList>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink href="#">Contact</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="#">Contact</Style.HeaderNavLink>
           </Style.HeaderNavList>
         </Style.HeaderNav>
       </Style.HeaderNavGroup>

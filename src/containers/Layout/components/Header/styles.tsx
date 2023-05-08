@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderDiv = styled.div`
   width: 100%;
@@ -36,7 +37,7 @@ export const HeaderNavList = styled.li`
   width: 30%;
 `;
 
-export const HeaderNavLink = styled.a`
+export const HeaderNavLink = styled(Link)`
   @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
   // remove a style
   color: inherit; /* 移除超連結顏色 */

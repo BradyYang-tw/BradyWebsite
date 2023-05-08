@@ -15,7 +15,8 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        // loader: 'awesome-typescript-loader'  //使用此loader，react router會有問題
+        loader: 'ts-loader'
       },
       {
         test: /\.css$/i,
