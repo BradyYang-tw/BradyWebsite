@@ -1,11 +1,22 @@
 import * as React from "react";
-import Header from './components/Header/Header'
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import * as Style from "./style";
 
-const Layout = ()=>{
-    console.log('Layout');
-    return <React.Fragment>
-        <Header/>
-    </React.Fragment>
+interface Props {
+  children?: React.ReactNode;
+  // any props that come into the component
 }
+
+const Layout = ({ children }: Props) => {
+  console.log("Layout");
+  return (
+    <Style.layoutContainer>
+      <Header />
+      {children}
+      <Footer />
+    </Style.layoutContainer>
+  );
+};
 
 export default Layout;

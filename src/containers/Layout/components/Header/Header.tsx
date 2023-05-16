@@ -8,19 +8,19 @@ const Header = () => {
       <Style.HeaderNavGroup>
         <Style.HeaderNav>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink to="/home">Home</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="home">Home</Style.HeaderNavLink>
           </Style.HeaderNavList>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink to="#">About</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="about">About</Style.HeaderNavLink>
           </Style.HeaderNavList>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink to="#">Projects</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="projects">Projects</Style.HeaderNavLink>
           </Style.HeaderNavList>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink to="#">Articles</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="articles">Articles</Style.HeaderNavLink>
           </Style.HeaderNavList>
           <Style.HeaderNavList>
-            <Style.HeaderNavLink to="#">Contact</Style.HeaderNavLink>
+            <Style.HeaderNavLink to="contact">Contact</Style.HeaderNavLink>
           </Style.HeaderNavList>
         </Style.HeaderNav>
       </Style.HeaderNavGroup>

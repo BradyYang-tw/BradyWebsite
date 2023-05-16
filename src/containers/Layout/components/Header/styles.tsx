@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const HeaderDiv = styled.div`
   width: 100%;
   // height: 200px;
-  background-color: rgb(56, 56, 56);
+  // background-color: rgb(56, 56, 56);
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;

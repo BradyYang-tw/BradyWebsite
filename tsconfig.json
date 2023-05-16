@@ -8,9 +8,15 @@
         "target": "es5",
         "jsx": "react",
         "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true, //確保檔案的大小寫一致
         // 加入以下兩行，避免TS2300: Duplicate identifier
         "skipLibCheck": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        // For webpack alias
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"],
+        }
     },
     "include": [
         "./src/**/*"
