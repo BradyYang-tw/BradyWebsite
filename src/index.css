@@ -3,5 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   /* background: rgb(56, 56, 56); */
-  background-color: rgb(56, 56, 56);
+  /* background-color: rgb(56, 56, 56); */
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  color: white;
+  background: #081b29;
+}
+
+#root {
+  height: 100vh;
 }

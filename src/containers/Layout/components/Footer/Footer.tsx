@@ -2,7 +2,11 @@ import React from "react";
 import * as Style from "./styles";
 
 const Footer = () => {
-  return <Style.footerContainer>test</Style.footerContainer>;
+  return (
+    <Style.footerContainer>
+      Copyright © 2022 Brady All rights reserved
+    </Style.footerContainer>
+  );
 };
 
 export default Footer;

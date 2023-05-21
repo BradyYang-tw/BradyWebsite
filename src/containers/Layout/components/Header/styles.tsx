@@ -1,14 +1,17 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const HeaderDiv = styled.div`
+export const HeaderDiv = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  // height: 200px;
+  height: 100px;
   // background-color: rgb(56, 56, 56);
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 0px 100px;
+  padding: 20px 100px;
 `;
 
 export const HeaderLogo = styled.div`
@@ -17,6 +20,7 @@ export const HeaderLogo = styled.div`
   font-family: "Heebo", sans-serif;
   color: white;
   padding: 10px;
+  font-weight: 600;
 `;
 
 export const HeaderNavGroup = styled.div`
@@ -51,7 +55,7 @@ export const HeaderNavLink = styled(Link)`
 
   &:hover {
     font-size: 36px;
-    color: black;
+    color: #00abf0;
     background-color: rgb(115, 115, 115);
   }
 `;

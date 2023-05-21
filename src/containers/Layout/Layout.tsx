@@ -1,5 +1,6 @@
 import * as React from "react";
 import Header from "./components/Header/Header";
+import Section from "./components/Section/Section";
 import Footer from "./components/Footer/Footer";
 import * as Style from "./style";
 
@@ -13,7 +14,7 @@ const Layout = ({ children }: Props) => {
   return (
     <Style.layoutContainer>
       <Header />
-      {children}
+      <Section page={children}></Section>
       <Footer />
     </Style.layoutContainer>
   );

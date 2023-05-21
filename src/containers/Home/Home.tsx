@@ -19,9 +19,14 @@ const Home = () => {
             culpa, molestiae eum veniam, iure magnam impedit repellendus quidem
             ullam quisquam porro.
           </Style.introduceContent>
+          <Style.buttonGroup>
+            <Style.homeButton>Hire Me</Style.homeButton>
+            <Style.homeButton>Let's Talk</Style.homeButton>
+          </Style.buttonGroup>
         </Style.introduce>
+
         <div>
-          <img src={kobe1} alt="kobe" />
+          <Style.homeImage src={kobe1} alt="kobe"></Style.homeImage>
         </div>
       </Style.homeContainer>
     </React.Fragment>
