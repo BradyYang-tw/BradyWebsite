@@ -9,7 +9,7 @@ export const homeContainer = styled.div`
 `;
 
 export const introduce = styled.div`
-  border: 1px solid white;
+  // border: 1px solid white;
   max-width: 600px;
 `;
 
