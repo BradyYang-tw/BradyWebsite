@@ -1,11 +1,14 @@
 import styled from "styled-components";
-
+import kobe1 from "@/static/k6.jpg";
 export const homeContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   padding: 0 10%;
   height: 100vh;
+  background: url(${kobe1}) no-repeat;
+  background-size: cover;
+  // background-position: center;
 `;
 
 export const introduce = styled.div`

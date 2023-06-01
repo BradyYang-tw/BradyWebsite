@@ -26,7 +26,7 @@ export const wrapIcon = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background: red;
+    background: white;
     z-index: -1;
     transition: 0.5s;
   }

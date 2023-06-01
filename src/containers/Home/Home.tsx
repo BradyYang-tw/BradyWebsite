@@ -24,10 +24,6 @@ const Home = () => {
             <Style.homeButton>Let's Talk</Style.homeButton>
           </Style.buttonGroup>
         </Style.introduce>
-
-        <div>
-          <Style.homeImage src={kobe1} alt="kobe"></Style.homeImage>
-        </div>
       </Style.homeContainer>
     </React.Fragment>
   );
