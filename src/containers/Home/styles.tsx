@@ -1,5 +1,21 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import kobe1 from "@/static/k6.jpg";
+
+const showRight = keyframes`
+  100% {
+    width: 0;
+  }
+`;
+
+const typeing = keyframes`
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+`;
+
 export const homeContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -22,6 +38,44 @@ export const introduceTitle = styled.h1`
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
+  position: relative;
+  color: transparent;
+
+  // &:before {
+  //   content: "";
+  //   position absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   color: white;
+  //   background: #081B29;
+  //   animation: ${showRight} 1s ease forwards;
+  //   animation-delay: 1s;
+  // }
+
+  // -webkit-transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+  // text-transform: uppercase;
+  // margin: 0;
+  // padding: 0;
+  letter-spacing: 5px;
+
+  &:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+    // border-right: 1px solid #ffffff;
+    animation: ${typeing} 1s steps(13);
+    -webkit-animation: ${typeing} 1s steps(13);
+    white-space: nowrap;
+  }
 `;
 
 export const introduceContent = styled.p`

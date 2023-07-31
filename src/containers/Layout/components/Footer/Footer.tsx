@@ -14,7 +14,14 @@ const Footer = () => {
     <Style.footerContainer>
       <Style.iconGroup>
         <Style.wrapIcon>
-          <Style.myIcon icon={faPropIcon} />
+          <a href="https://github.com/BradyYang-tw" target="_blank">
+            <Style.myIcon
+              icon={faPropIcon}
+              onClick={() => {
+                console.log("hi");
+              }}
+            />
+          </a>
         </Style.wrapIcon>
         <Style.wrapIcon>
           <Style.myIcon icon={faPropIcon2} />
@@ -23,7 +30,7 @@ const Footer = () => {
           <Style.myIcon icon={faPropIcon3} />
         </Style.wrapIcon>
       </Style.iconGroup>
-      <p>Copyright © 2022 Brady All rights reserved</p>
+      <p>Copyright © 2023 Brady All rights reserved</p>
     </Style.footerContainer>
   );
 };

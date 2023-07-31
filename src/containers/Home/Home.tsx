@@ -11,7 +11,9 @@ const Home = () => {
       {/* <Introduce></Introduce> */}
       <Style.homeContainer>
         <Style.introduce>
-          <Style.introduceTitle>Hi, I'm Brady</Style.introduceTitle>
+          <Style.introduceTitle data-text="Hi, I'm Brady">
+            Hi, I'm Brady
+          </Style.introduceTitle>
           <Style.jobtitle>Frontend Developer</Style.jobtitle>
           <Style.introduceContent>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,

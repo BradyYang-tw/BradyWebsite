@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const myIcon = styled(FontAwesomeIcon)`
   font-size: 20px;
+  cursor: pointer;
 `;
 
 export const wrapIcon = styled.div`
